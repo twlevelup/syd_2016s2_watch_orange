@@ -32,3 +32,4 @@ To view the build status and get notifications about the build status:
 You can also access the CI server and view the status of the build here [Snap CI](https://snap-ci.com/twlevelup/syd_2016s2_watch_orange/branch/master)
 
 Sheena Takkenberg
+Pauline Kelly
