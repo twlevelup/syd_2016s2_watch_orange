@@ -35,3 +35,5 @@ Sheena Takkenberg
 Pauline Kelly
 Charlie Lu
 Mark Nerwich
+Chris Le
+Andrew Knight
