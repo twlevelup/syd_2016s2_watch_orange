@@ -30,3 +30,5 @@ To view the build status and get notifications about the build status:
 2. Add the XML config to CCTray or CCMenu on your dev machine
 
 You can also access the CI server and view the status of the build here [Snap CI](https://snap-ci.com/twlevelup/watch_edition/branch/master?notice=watch_edition)
+
+Sheena Takkenberg
