@@ -33,3 +33,4 @@ You can also access the CI server and view the status of the build here [Snap CI
 
 Sheena Takkenberg
 Pauline Kelly
+Chris Le
