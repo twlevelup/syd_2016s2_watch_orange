@@ -17,9 +17,12 @@ See the [Installation Instructions](https://github.com/twlevelup/watch_edition/w
 1. Check the CI build, do not commit unless it's passing!
 2. ```git pull --rebase```
 3. Fix any merge conflicts
-4. ```./go pre-commit``` (OS X) or ```npm -s run test``` (Windows)
-4. Fix any errors
-5. ```git push```
+4. Run  
+```./go pre-commit``` (OS X)  
+```npm -s run test``` (Windows)  
+```docker-compose -f docker-compose.test.yml up``` (Docker)
+5. Fix any errors
+6. ```git push```
 
 
 ### Checking the build status
