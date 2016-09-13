@@ -26,5 +26,9 @@ describe('Check-in dance', function() {
       expect(page.$el).toContainText('Mark Nerwich');
     });
 
+    it('should include the text "Sheena Takkenberg"', function() {
+      expect(page.$el).toContainText('Sheena Takkenberg');
+    });
+
   });
 });
