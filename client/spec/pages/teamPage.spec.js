@@ -30,5 +30,9 @@ describe('Check-in dance', function() {
       expect(page.$el).toContainText('Sheena Takkenberg');
     });
 
+    it('should include the text "Andrew Knight"', function() {
+      expect(page.$el).toContainText('Andrew Knight');
+    });
+
   });
 });
