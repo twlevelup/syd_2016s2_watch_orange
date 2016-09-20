@@ -14,7 +14,9 @@ describe('The App Directory', function() {
     });
 
   describe('button event handlers', function() {
-
+    it('Stupid test', function() {
+        expect(1).toEqual(2);
+      });
   });
 
   describe('rendering', function() {

@@ -7,6 +7,6 @@ module.exports = {
   home: require('./homePage'),
   contacts: require('./contactsPage'),
   eventsList: require('./eventsList'),
-  eventDetails: require('./eventDetails'), 
+  eventDetails: require('./eventDetails'),
   appDirectory: require('./appDirectory')
 };
