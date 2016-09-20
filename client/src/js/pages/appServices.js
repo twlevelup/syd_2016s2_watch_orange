@@ -6,8 +6,8 @@ var appServices = Page.extend({
 
   id: 'appServices',
   items: [
-    "Doctor",
-    "Pharmacist"
+    'Doctor',
+    'Pharmacist'
   ],
 
   template: require('../../templates/pages/appServices.hbs'),
