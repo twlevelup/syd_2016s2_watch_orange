@@ -9,22 +9,17 @@ var homePage = Page.extend({
   template: require('../../templates/pages/home.hbs'),
 
   buttonEvents: {
-    right: 'goToContacts',
-    top: 'scrollUp',
-    bottom: 'scrollDown'
+    face: 'goToAppDirectory',
   },
 
-  goToContacts: function() {
-    window.App.navigate('contacts');
+  goToAppDirectory: function() {
+    window.App.navigate('appDirectory');
   },
 
-  scrollUp: function() {
-    $('#watch-face').animate({scrollTop: '-=70px'});
-  },
 
-  scrollDown: function() {
-    $('#watch-face').animate({scrollTop: '+=70px'});
-  },
+  // scrollUp: function() {
+  //   $('#watch-face').animate({scrollTop: '-=70px'});
+  // },
 
   render: function() {
     this.$el.html(this.template());

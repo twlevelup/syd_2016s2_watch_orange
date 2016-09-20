@@ -13,33 +13,15 @@ describe('The Home Page', function() {
     page = new HomePage();
   });
 
-  describe('button event handlers', function() {
+  describe('button event handler', function() {
 
-    describe('right', function() {
+    describe('face', function() {
 
-      it('should take the user to the contacts page', function() {
+      it('should take the user to the App Directory', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
-        eventHub.trigger('right');
-        expect(window.App.navigate).toHaveBeenCalledWith('contacts');
-      });
-    });
-
-    describe('top', function() {
-      it('should scroll the watch face up', function() {
-        spyOn(page, 'scrollUp');
-        page.configureButtons();
-        eventHub.trigger('top');
-        expect(page.scrollUp).toHaveBeenCalled();
-      });
-    });
-
-    describe('bottom', function() {
-      it('should scroll the watch face down', function() {
-        spyOn(page, 'scrollDown');
-        page.configureButtons();
-        eventHub.trigger('bottom');
-        expect(page.scrollDown).toHaveBeenCalled();
+        eventHub.trigger('face');
+        expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
       });
     });
 
@@ -47,10 +29,10 @@ describe('The Home Page', function() {
 
   describe('rendering', function() {
 
-    it('should produce the correct HTML', function() {
-      page.render();
-      expect(page.$el).toContainText('Hello, World!');
-    });
+    // it('should produce the correct HTML', function() {
+    //   page.render();
+    //   expect(page.$el).toContainText('Hello, World!');
+    // });
 
     it('returns the view object', function() {
       expect(page.render()).toEqual(page);
