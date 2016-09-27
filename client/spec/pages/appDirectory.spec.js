@@ -14,6 +14,17 @@ describe('The App Directory', function() {
     });
 
   describe('button event handlers', function() {
+
+    describe('right', function() {
+
+      it('should take the user to the App Services', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('right');
+        expect(window.App.navigate).toHaveBeenCalledWith('appServices');
+      });
+    });
+
   });
 
   describe('rendering', function() {

@@ -9,22 +9,12 @@ var appDirectory = Page.extend({
   template: require('../../templates/pages/appDirectory.hbs'),
 
   buttonEvents: {
-    // right: 'goToContacts',
-    // top: 'scrollUp',
-    // bottom: 'scrollDown'
+    right: 'goToAppServices'
   },
 
-  // goToContacts: function() {
-  //   window.App.navigate('contacts');
-  // },
-
-  // scrollUp: function() {
-  //   $('#watch-face').animate({scrollTop: '-=70px'});
-  // },
-
-  // scrollDown: function() {
-  //   $('#watch-face').animate({scrollTop: '+=70px'});
-  // },
+  goToAppServices: function() {
+    window.App.navigate('appServices');
+  },
 
   render: function() {
     this.$el.html(this.template());
