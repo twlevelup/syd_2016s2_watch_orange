@@ -11,10 +11,10 @@ var nearbyServicesList = Menu.extend({
   id: 'nearby-menu',
 
   buttonEvents: {
-    //right: 'select',
-    //left: 'back',
-    //top: 'previous',
-    //bottom: 'next'
+    right: 'select',
+    left: 'back',
+    top: 'previous',
+    bottom: 'next'
   },
 
   getMenuItemLabel: function(menuItem) {
