@@ -10,5 +10,6 @@ module.exports = {
   eventDetails: require('./eventDetails'),
   appDirectory: require('./appDirectory'),
   appServices: require('./appServices'),
-  address: require('./address')
+  address: require('./address'),
+  healthList: require('./healthList')
 };

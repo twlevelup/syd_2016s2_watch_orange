@@ -21,5 +21,10 @@ describe('The Address Directory', function() {
       page.render();
       expect(page.$el).toContainHtml('<h1>Address</h1>');
     });
+
+    it('This should display an address in the HTML page', function() {
+      page.render();
+      expect(page.$el).toContainHtml('<p>53-57 Pitt St, Sydney 2000.</p>');
+    });
   });
 });
