@@ -19,4 +19,8 @@ describe('The App Directory', function() {
   describe('rendering', function() {
 
   });
+
+  it('returns the view object', function() {
+    expect(page.render()).toEqual(page);
+  });
 });
