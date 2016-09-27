@@ -9,5 +9,6 @@ module.exports = {
   eventsList: require('./eventsList'),
   eventDetails: require('./eventDetails'),
   appDirectory: require('./appDirectory'),
-  appServices: require('./appServices')
+  appServices: require('./appServices'),
+  address: require('./address')
 };
