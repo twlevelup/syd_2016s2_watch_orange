@@ -4,18 +4,17 @@ var Page = require('watch_framework').Page;
 
 var appServices = Page.extend({
 
-  id: 'appServices',
-  items: [
-    'Doctor',
-    'Pharmacist'
-  ],
+  id: 'foodServicesList',
 
-  template: require('../../templates/pages/appServices.hbs'),
+  template: require('../../templates/pages/foodServicesList.hbs'),
 
   buttonEvents: {
     // right: 'goToContacts',
     // top: 'scrollUp',
-    // bottom: 'scrollDown'
+    left: 'back'
+  },
+  back: function() {
+    window.App.navigate('appDirectory');
   },
 
   // goToContacts: function() {

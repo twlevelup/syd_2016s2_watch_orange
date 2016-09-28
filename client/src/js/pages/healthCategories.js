@@ -22,6 +22,7 @@ var nearbyServicesList = Menu.extend({
   },
 
   select: function() {
+
     // TODO make the router a singleton?
     // TODO move showPage in to the router, might be able to get rid of the activePage stuff too
     // TODO include it at the top level instead of inside the app?

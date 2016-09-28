@@ -9,7 +9,9 @@ module.exports = {
   eventsList: require('./eventsList'),
   eventDetails: require('./eventDetails'),
   appDirectory: require('./appDirectory'),
-  appServices: require('./appServices'),
+  healthServicesList: require('./healthServicesList'),
+  shelterServicesList: require('./shelterServicesList'),
+  foodServicesList: require('./foodServicesList'),
   address: require('./address'),
   healthList: require('./healthList')
 };

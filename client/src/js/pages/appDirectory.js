@@ -9,11 +9,26 @@ var appDirectory = Page.extend({
   template: require('../../templates/pages/appDirectory.hbs'),
 
   buttonEvents: {
-    right: 'goToAppServices'
+    top: 'goToHealthServicesList',
+    left: 'goToFoodServicesList',
+    right: 'goToShelterServicesList',
+    face: 'goToHomePage'
   },
 
-  goToAppServices: function() {
-    window.App.navigate('appServices');
+  goToHealthServicesList: function() {
+    window.App.navigate('healthServicesList');
+  },
+
+  goToFoodServicesList: function() {
+    window.App.navigate('foodServicesList');
+  },
+
+  goToShelterServicesList: function() {
+    window.App.navigate('shelterServicesList');
+  },
+
+  goToHomePage: function() {
+    window.App.navigate('home');
   },
 
   render: function() {

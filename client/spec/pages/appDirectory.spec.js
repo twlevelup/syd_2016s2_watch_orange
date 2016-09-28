@@ -17,11 +17,41 @@ describe('The App Directory', function() {
 
     describe('right', function() {
 
-      it('should take the user to the App Services', function() {
+      it('should take the user to the Shelter Services List', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('right');
-        expect(window.App.navigate).toHaveBeenCalledWith('appServices');
+        expect(window.App.navigate).toHaveBeenCalledWith('shelterServicesList');
+      });
+    });
+
+    describe('left', function() {
+
+      it('should take the user to the Food Services List', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('left');
+        expect(window.App.navigate).toHaveBeenCalledWith('foodServicesList');
+      });
+    });
+
+    describe('top', function() {
+
+      it('should take the user to the Health Services', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('top');
+        expect(window.App.navigate).toHaveBeenCalledWith('healthServicesList');
+      });
+    });
+
+    describe('face', function() {
+
+      it('should take the user to Home Page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('face');
+        expect(window.App.navigate).toHaveBeenCalledWith('home');
       });
     });
 
