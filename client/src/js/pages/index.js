@@ -12,6 +12,7 @@ module.exports = {
   healthServicesList: require('./healthServicesList'),
   shelterServicesList: require('./shelterServicesList'),
   foodServicesList: require('./foodServicesList'),
+  socialServicesList: require('./socialServicesList'),
   address: require('./address'),
   healthList: require('./healthList')
 };

@@ -45,6 +45,16 @@ describe('The App Directory', function() {
       });
     });
 
+    describe('bottom', function() {
+
+      it('should take the user to the Social Services', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('bottom');
+        expect(window.App.navigate).toHaveBeenCalledWith('socialServicesList');
+      });
+    });
+
     describe('face', function() {
 
       it('should take the user to Home Page', function() {

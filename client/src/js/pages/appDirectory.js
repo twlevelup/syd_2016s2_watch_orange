@@ -12,6 +12,7 @@ var appDirectory = Page.extend({
     top: 'goToHealthServicesList',
     left: 'goToFoodServicesList',
     right: 'goToShelterServicesList',
+    bottom: 'goToSocialServicesList',
     face: 'goToHomePage'
   },
 
@@ -25,6 +26,10 @@ var appDirectory = Page.extend({
 
   goToShelterServicesList: function() {
     window.App.navigate('shelterServicesList');
+  },
+
+  goToSocialServicesList: function() {
+    window.App.navigate('socialServicesList');
   },
 
   goToHomePage: function() {
