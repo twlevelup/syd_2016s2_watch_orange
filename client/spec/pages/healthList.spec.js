@@ -20,6 +20,13 @@ describe('The Health List', function() {
       eventHub.trigger('face');
       expect(window.App.navigate).toHaveBeenCalledWith('address');
     });
+
+    it('This should take us back to Health Categories', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('left');
+      expect(window.App.navigate).toHaveBeenCalledWith('healthCategories');
+    });
   });
 
   describe('rendering', function() {

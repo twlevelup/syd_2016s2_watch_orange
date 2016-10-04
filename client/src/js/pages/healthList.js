@@ -9,7 +9,7 @@ var healthList = Page.extend({
   template: require('../../templates/pages/healthList.hbs'),
 
   buttonEvents: {
-    // left: 'goBackToHealthServices',
+    left: 'goBackToHealthServices',
     face: 'goToAddress'
   },
 
@@ -17,9 +17,9 @@ var healthList = Page.extend({
     window.App.navigate('address');
   },
 
-  // goBackToHealthServices: function() {
-  //   window.App.navigate('healthCategories');
-  // },
+  goBackToHealthServices: function() {
+    window.App.navigate('healthCategories');
+  },
 
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});
