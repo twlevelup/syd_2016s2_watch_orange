@@ -27,6 +27,13 @@ describe('The Health List', function() {
       eventHub.trigger('left');
       expect(window.App.navigate).toHaveBeenCalledWith('healthCategories');
     });
+
+    it('This should take us back to appDirectory', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('right');
+      expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
+    });
   });
 
   describe('rendering', function() {

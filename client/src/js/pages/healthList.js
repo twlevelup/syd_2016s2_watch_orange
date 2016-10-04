@@ -10,6 +10,7 @@ var healthList = Page.extend({
 
   buttonEvents: {
     left: 'goBackToHealthServices',
+    right: 'goBackToAppDirectory',
     face: 'goToAddress'
   },
 
@@ -19,6 +20,10 @@ var healthList = Page.extend({
 
   goBackToHealthServices: function() {
     window.App.navigate('healthCategories');
+  },
+
+  goBackToAppDirectory: function() {
+    window.App.navigate('appDirectory');
   },
 
   // scrollUp: function() {
