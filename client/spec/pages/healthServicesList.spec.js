@@ -22,6 +22,18 @@ describe('The Health Services', function() {
         expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
       });
     });
+
+    // testing to see if the face button to connect up with healthList.
+    describe('face', function() {
+      it ('should take the user to the next page for nearby services', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('select');
+        expect(window.App.navigate).toHaveBeenCalledWith('healthList');
+      });
+
+    });
+
   });
 
   describe('rendering', function() {

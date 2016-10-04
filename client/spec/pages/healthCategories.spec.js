@@ -22,6 +22,7 @@ describe('The Health Categories', function() {
       });
     });
 
+    // This one will need to change from right button to the face for seletion.
     describe('right', function() {
       it('should select the current service and navigate to the more detailed info about service', function() {
         spyOn(page, 'select');

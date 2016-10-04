@@ -18,7 +18,9 @@ var appServices = Page.extend({
 
     // top: 'scrollUp',
     // bottom: 'scrollDown'
-    left: 'back'
+
+    left: 'back',
+    face: 'select'
   },
 
   back: function() {
@@ -39,6 +41,14 @@ var appServices = Page.extend({
   //
   //   }
   // }
+  select: function() {
+    window.App.navigate('healthList');
+  },
+
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
 
   // goToContacts: function() {
   //   window.App.navigate('contacts');
@@ -51,13 +61,6 @@ var appServices = Page.extend({
   // scrollDown: function() {
   //   $('#watch-face').animate({scrollTop: '+=70px'});
   // },
-
-  render: function() {
-    // insert the list into this template, then use it?
-    this.$el.html(this.template());
-    return this;
-  }
-
 });
 
 module.exports = appServices;
