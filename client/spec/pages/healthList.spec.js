@@ -21,11 +21,11 @@ describe('The Health List', function() {
       expect(window.App.navigate).toHaveBeenCalledWith('address');
     });
 
-    it('This should take us back to Health Categories', function() {
+    it('This should take us back to healthServicesList', function() {
       spyOn(window.App, 'navigate');
       page.configureButtons();
       eventHub.trigger('left');
-      expect(window.App.navigate).toHaveBeenCalledWith('healthCategories');
+      expect(window.App.navigate).toHaveBeenCalledWith('healthServicesList');
     });
 
     it('This should take us back to appDirectory', function() {

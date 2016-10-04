@@ -19,7 +19,7 @@ var healthList = Page.extend({
   },
 
   goBackToHealthServices: function() {
-    window.App.navigate('healthCategories');
+    window.App.navigate('healthServicesList');
   },
 
   goBackToAppDirectory: function() {
