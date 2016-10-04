@@ -9,21 +9,20 @@ var healthList = Page.extend({
   template: require('../../templates/pages/healthList.hbs'),
 
   buttonEvents: {
-    // right: 'goToContacts',
-    // top: 'scrollUp',
-    // bottom: 'scrollDown'
+    // left: 'goBackToHealthServices',
+    face: 'goToAddress'
   },
 
-  // goToContacts: function() {
-  //   window.App.navigate('contacts');
+  goToAddress: function() {
+    window.App.navigate('address');
+  },
+
+  // goBackToHealthServices: function() {
+  //   window.App.navigate('healthCategories');
   // },
 
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});
-  // },
-
-  // scrollDown: function() {
-  //   $('#watch-face').animate({scrollTop: '+=70px'});
   // },
 
   render: function() {

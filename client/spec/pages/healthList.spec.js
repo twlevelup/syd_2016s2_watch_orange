@@ -14,6 +14,12 @@ describe('The Health List', function() {
     });
 
   describe('button event handlers', function() {
+    it('This should take us to the address page', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('face');
+      expect(window.App.navigate).toHaveBeenCalledWith('address');
+    });
   });
 
   describe('rendering', function() {
