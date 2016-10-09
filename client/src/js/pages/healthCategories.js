@@ -10,6 +10,7 @@ var nearbyServicesList = Menu.extend({
 
   id: 'nearby-menu',
 
+  //specifies actions to do with button events
   buttonEvents: {
     right: 'select',
     left: 'back',
@@ -30,6 +31,7 @@ var nearbyServicesList = Menu.extend({
     //window.App.navigate('appDirectory/' + this.selected.cid);
   },
 
+  //the collection that the storage needs to be
   collection: storage.eventsData
 
 });
