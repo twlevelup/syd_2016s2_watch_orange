@@ -47,6 +47,8 @@
   height: 40px;
 }
 
+////// Navigation
+
 #up_nav_icon_id
 {
   position: absolute;
@@ -81,4 +83,10 @@
   right: -10px;
   width: 60px;
   height: 60px;
+}
+
+///// Lists
+
+ul {
+  list-style-type: none;
 }
