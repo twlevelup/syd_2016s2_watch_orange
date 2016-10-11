@@ -36,7 +36,7 @@ var healthList = Page.extend({
     $('#higlight').addClass('#hidden');
   },
 
-  scrollDown: function(){
+  scrollDown: function() {
     $('#watch-face').animate({scrollTop: '+=70px'});
   },
 

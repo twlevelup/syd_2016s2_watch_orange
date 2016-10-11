@@ -39,7 +39,7 @@ describe('The Health List', function() {
   describe('rendering', function() {
     it('This should display a list of health services', function() {
       page.render();
-      expect(page.$el).toContainHtml('<li>We Cure Diseases</li>');
+      expect(page.$el).toContainHtml('We Cure Diseases');
     });
   });
 });
