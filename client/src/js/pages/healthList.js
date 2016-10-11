@@ -11,7 +11,9 @@ var healthList = Page.extend({
   buttonEvents: {
     left: 'goBackToHealthServices',
     right: 'goBackToAppDirectory',
-    face: 'goToAddress'
+    face: 'goToAddress',
+    up: 'scrollUp',
+    down: 'scrollDown'
   },
 
   goToAddress: function() {
@@ -29,6 +31,14 @@ var healthList = Page.extend({
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});
   // },
+
+  scrollUp: function() {
+    $('#higlight').addClass('#hidden');
+  },
+
+  scrollDown: function(){
+    $('#watch-face').animate({scrollTop: '+=70px'});
+  },
 
   render: function() {
     this.$el.html(this.template());

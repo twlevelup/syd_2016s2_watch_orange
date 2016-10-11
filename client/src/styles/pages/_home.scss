@@ -53,40 +53,56 @@
 {
   position: absolute;
   top: -30px;
-  right: 105px;
-  width: 60px;
-  height: 60px;
+  right: 115px;
+  width: 35px;
+  height: 35px;
 }
 
 #down_nav_icon_id
 {
   position: absolute;
-  top: 210px;
-  right: 105px;
-  width: 60px;
-  height: 60px;
+  top: 230px;
+  right: 115px;
+  width: 35px;
+  height: 35px;
 }
 
 #left_nav_icon_id
 {
   position: absolute;
-  top: 90px;
-  right: 220px;
-  width: 60px;
-  height: 60px;
+  top: 95px;
+  right: 240px;
+  width: 35px;
+  height: 35px;
 }
 
 #right_nav_icon_id
 {
   position: absolute;
-  top: 90px;
+  top: 95px;
   right: -10px;
-  width: 60px;
-  height: 60px;
+  width: 35px;
+  height: 35px;
 }
 
 ///// Lists
 
 ul {
   list-style-type: none;
+}
+
+li {
+  font-size: 30px;
+}
+
+////// Hightlight
+
+// .highlight {
+//   background-color: darkslategray;
+//   background-size: contain;
+// }
+
+ul.scroll {
+  height: 150px;
+  overflow: scroll;
 }
