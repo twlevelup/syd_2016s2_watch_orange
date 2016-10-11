@@ -14,6 +14,12 @@ describe('The Address Directory', function() {
     });
 
   describe('button event handlers', function() {
+    it('should display the app directory page on right click', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('right');
+      expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
+    });
   });
 
   describe('rendering', function() {
