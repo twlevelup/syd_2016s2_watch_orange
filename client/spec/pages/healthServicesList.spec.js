@@ -28,7 +28,7 @@ describe('The Health Services', function() {
       it ('should take the user to the next page for nearby services', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
-        eventHub.trigger('select');
+        eventHub.trigger('face');
         expect(window.App.navigate).toHaveBeenCalledWith('healthList');
       });
 
