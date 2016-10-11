@@ -5,25 +5,31 @@
       "service_type": "Doctor",
       "service_locations": [{
         "service_name": "Westmead Hospital",
-        "service_address": "66 health Rd Westmead"
+        "service_address": "66 health Rd Westmead",
+        "distanceFromCurrentLocation": 1
       }, {
         "service_name": "Cocacola Hospital",
-        "service_address": "76 health Rd Westmead"
+        "service_address": "76 health Rd Westmead",
+        "distanceFromCurrentLocation": 3
       }, {
         "service_name": "Fanta Hospital",
-        "service_address": "100 health Rd Westmead"
+        "service_address": "100 health Rd Westmead",
+        "distanceFromCurrentLocation": 10
       }]
     }, {
       "service_type": "Dentist",
       "service_locations": [{
         "service_name": "Davidson Dentistry",
-        "service_address": "Hawks..."
+        "service_address": "Hawks...",
+        "distanceFromCurrentLocation": 12
       }, {
         "service_name": "Janice Dentistry",
-        "service_address": "butterfly..."
+        "service_address": "butterfly...",
+        "distanceFromCurrentLocation": 30
       }, {
         "service_name": "Ellie Dentistry",
-        "service_address": "123 four road five dock..."
+        "service_address": "123 four road five dock...",
+        "distanceFromCurrentLocation": 4
       }]
     }]
   }, {
