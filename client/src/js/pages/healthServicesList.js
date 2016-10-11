@@ -14,8 +14,8 @@ var appServices = Page.extend({
   template: require('../../templates/pages/healthServicesList.hbs'),
 
   buttonEvents: {
-    //assumes you have selected dr, and are moving to the right
     right: 'goToHealthList',
+
     // top: 'scrollUp',
     // bottom: 'scrollDown'
     left: 'back'
@@ -33,7 +33,6 @@ var appServices = Page.extend({
   goToHealthList: function() {
     window.App.navigate('healthList');
   },
-
 
   // insertServiceList: function() {
   //   for (service in services) {
