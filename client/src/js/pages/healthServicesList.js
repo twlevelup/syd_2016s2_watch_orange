@@ -4,7 +4,6 @@ var Page = require('watch_framework').Page;
 
 var appServices = Page.extend({
 
-
   template: require('../../templates/pages/healthServicesList.hbs'),
 
   buttonEvents: {
@@ -41,7 +40,6 @@ var appServices = Page.extend({
     this.$el.html(this.template());
     return this;
   }
-
 
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});

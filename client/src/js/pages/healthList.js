@@ -2,47 +2,44 @@
 
 var Page = require('watch_framework').Page;
 
+var healthList = Page.extend({
 
-  var healthList = Page.extend({
+  id: 'healthList',
 
-    id: 'healthList',
+  template: require('../../templates/pages/healthList.hbs'),
 
-    template: require('../../templates/pages/healthList.hbs'),
+  buttonEvents: {
+    left: 'goBackToHealthServices',
+    right: 'goBackToAppDirectory',
+    face: 'goToAddress',
+    up: 'scrollUp',
+    down: 'scrollDown'
+  },
 
-    buttonEvents: {
-      left: 'goBackToHealthServices',
-      right: 'goBackToAppDirectory',
-      face: 'goToAddress',
-      up: 'scrollUp',
-      down: 'scrollDown'
-    },
+  goToAddress: function() {
+    window.App.navigate('address');
+  },
 
-    goToAddress: function() {
-      window.App.navigate('address');
-    },
+  goBackToHealthServices: function() {
+    window.App.navigate('healthServicesList');
+  },
 
-    goBackToHealthServices: function() {
-      window.App.navigate('healthServicesList');
-    },
+  goBackToAppDirectory: function() {
+    window.App.navigate('appDirectory');
+  },
 
-    goBackToAppDirectory: function() {
-      window.App.navigate('appDirectory');
-    },
+  scrollUp: function() {
+    $('#scroll').animate({scrollTop: '-=70px'});
+  },
 
+  scrollDown: function() {
+    $('#scroll').animate({scrollTop: '+=70px'}).addClass('highlight');
+  },
 
-    scrollUp: function() {
-      $('#scroll').animate({scrollTop: '-=70px'});
-    },
-
-    scrollDown: function() {
-      $('#scroll').animate({scrollTop: '+=70px'}).addClass("highlight");
-    },
-
-
-    render: function() {
-      this.$el.html(this.template());
-      return this;
-    }
+  render: function() {
+    this.$el.html(this.template());
+    return this;
+  }
 
 });
 
