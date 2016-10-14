@@ -4,22 +4,14 @@ var Page = require('watch_framework').Page;
 
 var appServices = Page.extend({
 
-  id: 'healthServicesList',
-  services: ['Dentist',
-            'Doctor',
-            'Counsellor',
-            'Hospital',
-            'Pharmacist'],
 
   template: require('../../templates/pages/healthServicesList.hbs'),
 
   buttonEvents: {
-    right: 'goToHealthList',
-
     // top: 'scrollUp',
-    // bottom: 'scrollDown'
-
+    // bottom: 'scrollDown',
     left: 'back',
+    right: 'goToHealthList',
     face: 'select'
   },
 
@@ -50,9 +42,6 @@ var appServices = Page.extend({
     return this;
   }
 
-  // goToContacts: function() {
-  //   window.App.navigate('contacts');
-  // },
 
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});
