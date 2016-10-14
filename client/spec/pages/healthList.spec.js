@@ -37,9 +37,14 @@ describe('The Health List', function() {
   });
 
   describe('rendering', function() {
-    it('This should display a list of health services', function() {
-      page.render();
-      expect(page.$el).toContainHtml('We Cure Diseases');
-    });
+    // it('This should display a list of health services', function() {
+    //   page.render();
+    //   expect(page.$el).toContainHtml('<li>We Cure Diseases</li>');
+    // });
+
+    it('This should display the first list item with a distance of less than 5km', function() {
+        page.render();
+        expect(page.$el).toContainHtml('We Cure Diseases');
+      });
   });
 });

@@ -4,16 +4,16 @@
     "options": [{
       "service_type": "Doctor",
       "service_locations": [{
-        "service_name": "Westmead Hospital",
-        "service_address": "66 health Rd Westmead",
+        "service_name": "St Vincents Hospital",
+        "service_address": "66 Health Rd, Darlinghurst",
         "distanceFromCurrentLocation": 1
       }, {
         "service_name": "Cocacola Hospital",
-        "service_address": "76 health Rd Westmead",
+        "service_address": "76 health Rd Darlinghurst",
         "distanceFromCurrentLocation": 3
       }, {
         "service_name": "Fanta Hospital",
-        "service_address": "100 health Rd Westmead",
+        "service_address": "100 health St Sydney",
         "distanceFromCurrentLocation": 10
       }]
     }, {
