@@ -50,5 +50,11 @@ describe('The Health Services', function() {
       page.render();
       expect(page.$el).toContainHtml('<li>Doctor</li>');
     });
+
+    it('should produce the correct HTML', function() {
+      page.render();
+      expect(page.$el).toContainHtml('<li>Dentist</li>');
+    });
+
   });
 });
