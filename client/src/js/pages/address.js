@@ -9,7 +9,8 @@ var address = Page.extend({
   template: require('../../templates/pages/address.hbs'),
 
   buttonEvents: {
-    right: 'goToAppDirectory'
+    right: 'goToAppDirectory',
+    left: 'goToHealthList'
 
     // top: 'scrollUp',
     // bottom: 'scrollDown'
@@ -17,6 +18,10 @@ var address = Page.extend({
 
   goToAppDirectory: function() {
     window.App.navigate('appDirectory');
+  },
+
+  goToHealthList: function() {
+    window.App.navigate('healthList');
   },
 
   // goToContacts: function() {
