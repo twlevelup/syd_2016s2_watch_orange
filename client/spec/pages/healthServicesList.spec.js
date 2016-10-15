@@ -43,7 +43,7 @@ describe('The Health Services', function() {
   describe('rendering', function() {
     it('should produce the correct HTML', function() {
       page.render();
-      expect(page.$el).toContainHtml('<h1>Health Services</h1>');
+      expect(page.$el).toContainHtml('<h1 class="h1Style">Health Services</h1>');
     });
 
     it('should produce the correct HTML', function() {

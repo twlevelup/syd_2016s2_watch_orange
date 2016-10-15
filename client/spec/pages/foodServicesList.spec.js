@@ -27,7 +27,7 @@ describe('The App Services', function() {
   describe('rendering', function() {
     it('should produce the correct HTML', function() {
       page.render();
-      expect(page.$el).toContainHtml('<h1>Food Services</h1>');
+      expect(page.$el).toContainHtml('<h1 class="h1Style">Food Services</h1>');
     });
 
   });
