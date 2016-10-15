@@ -3,6 +3,7 @@
 var Router = Backbone.Router.extend({
 
   routes: {
+    'healthList/:id': 'showHealthList',
     'eventDetails/:id': 'showEventDetails',
     '*other': 'defaultRoute'
   },
@@ -24,6 +25,10 @@ var Router = Backbone.Router.extend({
 
   showEventDetails: function(id) {
     window.App.showPage(this.pages.eventDetails, {cid: id});
+  },
+
+  showHealthList: function(id) {
+    window.App.showPage(this.pages.healthList, {cid: id});
   }
 
 });

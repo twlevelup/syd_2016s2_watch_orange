@@ -1,6 +1,7 @@
 'use strict';
 
 var Page = require('watch_framework').Page;
+var storage = require('../../storage');
 
 var healthList = Page.extend({
 
@@ -35,7 +36,18 @@ var healthList = Page.extend({
   render: function() {
     this.$el.html(this.template());
     return this;
-  }
+  },
+
+  getMenuItemLabel: function(menuItem) {
+    return menuItem.get('name');
+  },
+
+  //move to the address page, with the following data
+  select: function() {
+    window.App.navigate('address/' + this.selected.cid);
+  },
+
+  collection: storage.categoriesData
 
 });
 
