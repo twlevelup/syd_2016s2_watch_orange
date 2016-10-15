@@ -5,8 +5,8 @@ $icon-size: 45px;
 #top_icon_id
 {
   position: absolute;
-  top: 20px;
-  right: 110px;
+  top: 31px;
+  right: 128px;
   width: $icon-size;
   height: $icon-size;
 }
@@ -14,17 +14,17 @@ $icon-size: 45px;
 #bottom_icon_id
 {
   position: absolute;
-  top: 210px;
-  right: 115px;
-  width: 60px;
-  height: 54px;
+  top: 203px;
+  right: 128px;
+  width: 45px;
+  height: 45px;
 }
 
 #left_icon_id
 {
   position: absolute;
-  top: 90px;
-  right: 200px;
+  top: 117px;
+  right: 229px;
   width: $icon-size;
   height: $icon-size;
 }
@@ -32,8 +32,8 @@ $icon-size: 45px;
 #right_icon_id
 {
   position: absolute;
-  top: 90px;
-  right: 20px;
+  top: 116px;
+  right: 30px;
   width: $icon-size;
   height: $icon-size;
 }
@@ -41,10 +41,10 @@ $icon-size: 45px;
 #face_icon_id
 {
   position: absolute;
-  top: 100px;
+  top: 107px;
   right: 115px;
-  width: 40px;
-  height: 40px;
+  width: 65px;
+  height: 65px;
 }
 
 ////// Navigation
@@ -88,9 +88,9 @@ $icon-size: 45px;
 ////// Address Arrows
 .app_up_nav_icon_id
 {
-  position: fixed;
-  top: -20px;
-  right: 118px;
+  position: absolute;
+  top: -3px;
+  right: 133px;
   width: 35px;
   height: 35px;
   z-index: 3;
@@ -99,8 +99,8 @@ $icon-size: 45px;
 .app_down_nav_icon_id
 {
   position: fixed;
-  top: 379px;
-  right: 398px;
+  top: 369px;
+  right: 404px;
   width: 35px;
   height: 35px;
 }
@@ -108,8 +108,8 @@ $icon-size: 45px;
 .app_left_nav_icon_id
 {
   position: absolute;
-  top: 255px;
-  right: 539px;
+  top: 127px;
+  right: 267px;
   width: 35px;
   height: 35px;
 }
@@ -117,8 +117,8 @@ $icon-size: 45px;
 .app_right_nav_icon_id
 {
   position: absolute;
-  top: 255px;
-  right: 268px;
+  top: 127px;
+  right: -4px;
   width: 35px;
   height: 35px;
 }
@@ -158,10 +158,10 @@ li {
 }
 
 #foot{
-  position : absolute;
-  top : 225px;
-  height : 15px;
+  position: absolute;
+  top: 274px;
+  height: 15px;
   width: 75px;
-  right: 95px;
+  right: 113px;
 
 }
