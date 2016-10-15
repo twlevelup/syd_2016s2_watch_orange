@@ -14,10 +14,10 @@ $icon-size: 45px;
 #bottom_icon_id
 {
   position: absolute;
-  top: 165px;
-  right: 110px;
-  width: $icon-size;
-  height: $icon-size;
+  top: 210px;
+  right: 115px;
+  width: 60px;
+  height: 54px;
 }
 
 #left_icon_id
@@ -86,151 +86,37 @@ $icon-size: 45px;
 }
 
 ////// Address Arrows
-#address_up_nav_icon_id
+.app_up_nav_icon_id
 {
-  position: relative;
-  top: -138px;
-  right: -85px;
+  position: fixed;
+  top: -20px;
+  right: 118px;
   width: 35px;
   height: 35px;
   z-index: 3;
 }
 
-#address_down_nav_icon_id
+.app_down_nav_icon_id
 {
   position: fixed;
-  top: 390px;
-  right: 407px;
+  top: 379px;
+  right: 398px;
   width: 35px;
   height: 35px;
 }
 
-#address_left_nav_icon_id
+.app_left_nav_icon_id
 {
-  position: fixed;
+  position: absolute;
   top: 255px;
   right: 539px;
   width: 35px;
   height: 35px;
 }
 
-#address_right_nav_icon_id
+.app_right_nav_icon_id
 {
-  position: fixed;
-  top: 255px;
-  right: 268px;
-  width: 35px;
-  height: 35px;
-}
-
-////AppDirectory Arrows
-#address_up_nav_icon_id
-{
-  position: relative;
-  top: -138px;
-  right: -85px;
-  width: 35px;
-  height: 35px;
-  z-index: 3;
-}
-
-#address_down_nav_icon_id
-{
-  position: fixed;
-  top: 390px;
-  right: 407px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_left_nav_icon_id
-{
-  position: fixed;
-  top: 255px;
-  right: 539px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_right_nav_icon_id
-{
-  position: fixed;
-  top: 255px;
-  right: 268px;
-  width: 35px;
-  height: 35px;
-}
-
-////HealthList Arrows
-#address_up_nav_icon_id
-{
-  position: relative;
-  top: -138px;
-  right: -85px;
-  width: 35px;
-  height: 35px;
-  z-index: 3;
-}
-
-#address_down_nav_icon_id
-{
-  position: fixed;
-  top: 390px;
-  right: 407px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_left_nav_icon_id
-{
-  position: fixed;
-  top: 255px;
-  right: 539px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_right_nav_icon_id
-{
-  position: fixed;
-  top: 255px;
-  right: 268px;
-  width: 35px;
-  height: 35px;
-}
-
-////HealthServicesList Arrows
-#address_up_nav_icon_id
-{
-  position: relative;
-  top: -138px;
-  right: -85px;
-  width: 35px;
-  height: 35px;
-  z-index: 3;
-}
-
-#address_down_nav_icon_id
-{
-  position: fixed;
-  top: 390px;
-  right: 407px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_left_nav_icon_id
-{
-  position: fixed;
-  top: 255px;
-  right: 539px;
-  width: 35px;
-  height: 35px;
-}
-
-#address_right_nav_icon_id
-{
-  position: fixed;
+  position: absolute;
   top: 255px;
   right: 268px;
   width: 35px;
