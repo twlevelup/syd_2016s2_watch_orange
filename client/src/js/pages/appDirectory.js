@@ -23,14 +23,20 @@ var appDirectory = Page.extend({
   },
 
   goToFoodServicesList: function() {
+    $('#watch').css('background-color', '#FFFFFF');
+    $('.screen').css('color', '#030303');
     window.App.navigate('foodServicesList');
   },
 
   goToShelterServicesList: function() {
+    $('#watch').css('background-color', '#FFFFFF');
+    $('.screen').css('color', '#030303');
     window.App.navigate('shelterServicesList');
   },
 
   goToSocialServicesList: function() {
+    $('#watch').css('background-color', '#FFFFFF');
+    $('.screen').css('color', '#030303');
     window.App.navigate('socialServicesList');
   },
 

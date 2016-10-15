@@ -16,6 +16,8 @@ var appServices = Page.extend({
   },
 
   back: function() {
+    $('#watch').css('background-color', '#EC7A23');
+    $('.screen').css('color', '#FFFFFF');
     window.App.navigate('appDirectory');
   },
 
