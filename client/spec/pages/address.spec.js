@@ -20,6 +20,7 @@ describe('The Address Directory', function() {
       eventHub.trigger('right');
       expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
     });
+
   });
 
   describe('rendering', function() {

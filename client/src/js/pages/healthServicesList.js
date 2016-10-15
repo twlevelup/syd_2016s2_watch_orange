@@ -19,8 +19,8 @@ var appServices = Page.extend({
   template: require('../../templates/pages/healthServicesList.hbs'),
 
   buttonEvents: {
-    // top: 'scrollUp',
-    // bottom: 'scrollDown',
+    top: 'scrollUp',
+    bottom: 'scrollDown',
     left: 'back',
     right: 'goToHealthList',
     face: 'select'
@@ -56,7 +56,7 @@ var appServices = Page.extend({
 
     this.$el.html(this.template(ourData));
     return this;
-  }
+  },
 
   // getServiceTypeData: function() {
   //   return this.data.get(this.options.cid);
@@ -72,6 +72,15 @@ var appServices = Page.extend({
   // scrollUp: function() {
   //   $('#watch-face').animate({scrollTop: '-=70px'});
   // },
+
+
+  scrollUp: function() {
+    $('#watch-face').animate({scrollTop: '-=35px'});
+  },
+
+  scrollDown: function() {
+    $('#watch-face').animate({scrollTop: '+=35px'});
+  }
 
 });
 
