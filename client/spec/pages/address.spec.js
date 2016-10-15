@@ -25,7 +25,7 @@ describe('The Address Directory', function() {
   describe('rendering', function() {
     it('This should display the address HTML page', function() {
       page.render();
-      expect(page.$el).toContainHtml('<h1>Organisation X</h1>');
+      expect(page.$el).toContainHtml('<h1>City Doctors</h1>');
     });
 
     it('This should display an address in the HTML page', function() {
