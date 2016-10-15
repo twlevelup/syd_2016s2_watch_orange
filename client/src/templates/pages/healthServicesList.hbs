@@ -1,15 +1,9 @@
 <h1>Health Services</h1>
 
-<!-- <ul>
-  <li>Dentist</li>
-  <li>Doctor</li>
-  <li>Counsellor</li>
-  <li>Hospital</li>
-  <li>Pharmacist</li>
-</ul> -->
-
 <ul>
-  <li>{{categories}}</li>
+  {{#each healthOptions}}
+    <li>{{service_type}}</li>
+  {{/each}}
 </ul>
 
 <img class="app_up_nav_icon_id" src="./../../images/up.png"/>
