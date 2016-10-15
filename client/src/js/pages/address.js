@@ -2,6 +2,7 @@
 
 var Page = require('watch_framework').Page;
 
+
 var address = Page.extend({
 
   id: 'address',

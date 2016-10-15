@@ -4,16 +4,16 @@
     "options": [{
       "service_type": "Doctor",
       "service_locations": [{
-        "service_name": "St Vincents Hospital",
-        "service_address": "66 Health Rd, Darlinghurst",
+        "service_name": "Dr. Jones",
+        "service_address": "63 Macquarie Steet, Sydney",
         "distanceFromCurrentLocation": 1
       }, {
-        "service_name": "Cocacola Hospital",
-        "service_address": "76 health Rd Darlinghurst",
+        "service_name": "The Health Clinic",
+        "service_address": "114 Elizabeth Street, Surry Hills",
         "distanceFromCurrentLocation": 3
       }, {
-        "service_name": "Fanta Hospital",
-        "service_address": "100 health St Sydney",
+        "service_name": "My Health Medical Centre",
+        "service_address": "8/151 Castlereagh St Sydney",
         "distanceFromCurrentLocation": 10
       }]
     }, {
@@ -30,6 +30,36 @@
         "service_name": "Ellie Dentistry",
         "service_address": "123 four road five dock...",
         "distanceFromCurrentLocation": 4
+      }]
+    }, {
+      "service_type": "Pharmacist",
+      "service_locations": [{
+        "service_name": "Chemist Warehouse",
+        "service_address": "Pitt St. Sydney 2000",
+        "distanceFromCurrentLocation": 1
+      }, {
+        "service_name": "Priceline Pharmacy Wynyard",
+        "service_address": "Macquarie St. Wynyard",
+        "distanceFromCurrentLocation": 2
+      }, {
+        "service_name": "East Village Pharmacy",
+        "service_address": "5 Defries Ave, Zetland 2017",
+        "distanceFromCurrentLocation": 10
+      }]
+    }, {
+      "service_type": "Hospital",
+      "service_locations": [{
+        "service_name": "St Vincents Hospital",
+        "service_address": "66 Health Rd, Darlinghurst",
+        "distanceFromCurrentLocation": 1
+      }, {
+        "service_name": "Prince of Wales Hospital",
+        "service_address": "Barker Street, Randwick",
+        "distanceFromCurrentLocation": 8
+      }, {
+        "service_name": "Royal Prince Alfred",
+        "service_address": "Missenden Road, Camperdown",
+        "distanceFromCurrentLocation": 5
       }]
     }]
   }, {
