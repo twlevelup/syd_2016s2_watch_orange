@@ -26,12 +26,12 @@ describe('The Address Directory', function() {
   describe('rendering', function() {
     it('This should display the address HTML page', function() {
       page.render();
-      expect(page.$el).toContainHtml('<h1>City Doctors</h1>');
+      expect(page.$el).toContainHtml('The Health Clinic');
     });
 
     it('This should display an address in the HTML page', function() {
       page.render();
-      expect(page.$el).toContainHtml('<p>53-57 Pitt St, Sydney 2000.</p>');
+      expect(page.$el).toContainHtml('114 Elizabeth Street, Surry Hills');
     });
   });
 });
