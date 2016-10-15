@@ -17,7 +17,7 @@ var address = Page.extend({
   },
 
   goToAppDirectory: function() {
-    $('#watch').css('background-color', '#EC7A23');
+    $('#watch').css('background-color', '#EC7A23'); //add a class here
     $('.screen').css('color', '#FFFFFF');
     window.App.navigate('appDirectory');
   },
@@ -25,18 +25,6 @@ var address = Page.extend({
   goToHealthList: function() {
     window.App.navigate('healthList');
   },
-
-  // goToContacts: function() {
-  //   window.App.navigate('contacts');
-  // },
-
-  // scrollUp: function() {
-  //   $('#watch-face').animate({scrollTop: '-=70px'});
-  // },
-
-  // scrollDown: function() {
-  //   $('#watch-face').animate({scrollTop: '+=70px'});
-  // },
 
   render: function() {
     this.$el.html(this.template());

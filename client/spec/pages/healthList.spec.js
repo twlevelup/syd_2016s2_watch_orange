@@ -36,6 +36,16 @@ describe('The Health List', function() {
     });
   });
 
+  describe('select', function() {
+    it('navigates to the address page for the selected item', function() {
+      var cid = 'c42'; //how?
+      spyOn(window.App, 'navigate');
+      page.selected = { cid: cid };
+      page.select();
+      expect(window.App.navigate).toHaveBeenCalledWith('address/' + cid);
+    });
+  });
+
   describe('rendering', function() {
     // it('This should display a list of health services', function() {
     //   page.render();

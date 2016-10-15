@@ -1,6 +1,7 @@
 'use strict';
 
 var Address = require('../../src/js/pages/address'),
+  storage = require('../../src/storage'),
   App = require('../../src/js/app'),
   eventHub = require('watch_framework').EventHub,
   page;
@@ -29,6 +30,12 @@ describe('The Address Directory', function() {
     });
 
   });
+
+  // describe('a address page', function() {
+  //   it('should load the address data', function() {
+  //     expect(page.data.length).toBeGreaterThan(1);
+  //   });
+  // });
 
   describe('rendering', function() {
     it('This should display the address HTML page', function() {
