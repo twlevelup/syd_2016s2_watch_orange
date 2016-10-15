@@ -53,11 +53,25 @@ describe('The App Directory', function() {
         eventHub.trigger('bottom');
         expect(window.App.navigate).toHaveBeenCalledWith('socialServicesList');
       });
+
+      it('should change to the Social Services page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('bottom');
+        expect(window.App.navigate).toHaveBeenCalledWith('socialServicesList');
+      });
     });
 
     describe('face', function() {
 
       it('should take the user to Home Page', function() {
+        spyOn(window.App, 'navigate');
+        page.configureButtons();
+        eventHub.trigger('face');
+        expect(window.App.navigate).toHaveBeenCalledWith('home');
+      });
+
+      it('should take the user back to Home Page', function() {
         spyOn(window.App, 'navigate');
         page.configureButtons();
         eventHub.trigger('face');

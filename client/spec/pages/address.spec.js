@@ -21,6 +21,13 @@ describe('The Address Directory', function() {
       expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
     });
 
+    it('should display the health list on left click', function() {
+      spyOn(window.App, 'navigate');
+      page.configureButtons();
+      eventHub.trigger('left');
+      expect(window.App.navigate).toHaveBeenCalledWith('healthList');
+    });
+
   });
 
   describe('rendering', function() {
