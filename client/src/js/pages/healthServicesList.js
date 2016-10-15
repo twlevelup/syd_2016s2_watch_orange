@@ -73,7 +73,6 @@ var appServices = Page.extend({
   //   $('#watch-face').animate({scrollTop: '-=70px'});
   // },
 
-
   scrollUp: function() {
     $('#watch-face').animate({scrollTop: '-=35px'});
   },
