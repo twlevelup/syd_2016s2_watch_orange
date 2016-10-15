@@ -17,6 +17,8 @@ var appDirectory = Page.extend({
   },
 
   goToHealthServicesList: function() {
+    $('#watch').css('background-color', '#FFFFFF');
+    $('.screen').css('color', '#000000');
     window.App.navigate('healthServicesList');
   },
 

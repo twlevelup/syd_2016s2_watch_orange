@@ -17,6 +17,8 @@ var address = Page.extend({
   },
 
   goToAppDirectory: function() {
+    $('#watch').css('background-color', '#EC7A23');
+    $('.screen').css('color', '#FFFFFF');
     window.App.navigate('appDirectory');
   },
 
