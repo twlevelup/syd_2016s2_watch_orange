@@ -6,8 +6,8 @@ var ourData = require('../../storage').categoriesData;
 
 var appServices = Page.extend({
 
-
   id: 'healthServicesList',
+
   // services: ['Dentist',
   //           'Doctor',
   //           'Counsellor',
@@ -43,13 +43,13 @@ var appServices = Page.extend({
     window.App.navigate('healthList');
   },
 
-
-
   render: function() {
-    console.log("This is ourData:", ourData);
-    console.log("These are our models:", ourData['models']);
-    console.log("This is model 0:", ourData['models'][0]['attributes']);
-    console.log("This is model attribute:", ourData['models'][0]['attributes']['category_name']);
+    var models = ourData['models'];
+    console.log('This is ourData:', ourData);
+    console.log('These are our models:', ourData.models);
+
+    console.log('This is model 0:', ourData.models[0]['attributes']);
+    console.log('This is model attribute:', ourData['models'][0]['attributes']['category_name']);
     this.$el.html(this.template(ourData));
     return this;
   }

@@ -30,12 +30,12 @@ describe('The Health Services', function() {
         expect(window.App.navigate).toHaveBeenCalledWith('healthList');
       });
 
-      it ('right button should go home', function() {
-        spyOn(window.App, 'navigate');
-        page.configureButtons();
-        eventHub.trigger('right');
-        expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
-      });
+      // it ('right button should go home', function() {
+      //   spyOn(window.App, 'navigate');
+      //   page.configureButtons();
+      //   eventHub.trigger('right');
+      //   expect(window.App.navigate).toHaveBeenCalledWith('appDirectory');
+      // });
     });
 
   });
